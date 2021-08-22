@@ -2,10 +2,14 @@
 
 namespace App\Controllers;
 
-class HomeController
+use App\Controller;
+
+class HomeController extends Controller
 {
     public function index()
     {
-        return 'Selamat malam';
+        return $this->view('\home\index', [
+            'title' => 'Home'
+        ]);
     }
 }
