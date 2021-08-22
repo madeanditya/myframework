@@ -12,4 +12,11 @@ class HomeController extends Controller
             'title' => 'Home'
         ]);
     }
+
+    public function show()
+    {
+        return $this->view('\home\show', [
+            'title' => 'Home'
+        ]);
+    }
 }
